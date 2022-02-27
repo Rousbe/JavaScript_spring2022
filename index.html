@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--Liitetään Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <!--CSS-tiedosto-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Tehtävälista</title>
+</head>
+<body>
+    <div class="alku">
+        <h1>Tehtävälista</h1>
+        <input type="text" id="myInput" required="" placeholder="Mitä lisättäisiin..." />
+        <!--Nappi, jolla listalle voidaan lisätä asioita -->
+        <span onclick="addItem()" class="addButton">Lisää</span>
+    </div>
+    <ul id="todoList">
+    </ul>
+     <!--Laskuri-->
+    <p id="counterElement"></p>
+     <!--Nappi, joka tyhjentää koko listan-->
+    <button type="button" id="clear-list" onclick="removeAll()">Tyhjennä</button>
+    <!--JavaScript-tiedosto-->
+    <script src="javascript.js"></script>
+</body>
+</html>
